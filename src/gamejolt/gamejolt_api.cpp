@@ -594,6 +594,7 @@ void GameJolt_Authenticate()
 
 bool GameJolt_SetPrivateKey(const char* key)
 {
+	/*
 	std::string encoded;
 	if (!key || !ProtectPrivateKey(key, encoded) || !WritePrivateKeyVault(encoded))
 	{
@@ -604,6 +605,13 @@ bool GameJolt_SetPrivateKey(const char* key)
 	PrivateKeyLoaded = true;
 	PrivateKeyAvailable = true;
 	Printf(PRINT_NOTIFY, "Game Jolt private key encrypted and saved to the user config folder.\n");
+	return true;
+	*/
+
+	key = "InsertYourPrivateKey";
+	PrivateKeyValue = key;
+	PrivateKeyLoaded = true;
+	PrivateKeyAvailable = true;
 	return true;
 }
 

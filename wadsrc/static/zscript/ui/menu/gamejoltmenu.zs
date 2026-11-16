@@ -50,6 +50,7 @@ class OptionMenuItemGameJoltLogin : OptionMenuItemSubmenu
 	{
 		Menu.MenuSound("menu/choose");
 		GameJolt.Authenticate();
+		GameJolt.SetPrivateKey(0);
 		return true;
 	}
 }

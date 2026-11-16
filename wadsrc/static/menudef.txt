@@ -398,11 +398,9 @@ OptionMenu "GameJoltMenu" protected
 	NumberField "Game ID", "gamejolt_game_id", 1, 2147483647
 	TextField "Username", "gamejolt_username"
 	GameJoltTokenField "Game Token", "gamejolt_usertoken"
-	GameJoltPrivateKeyField "Game API Private Key", "gamejolt_private_key"
 	GameJoltStatus "Connection Status"
 	GameJoltLogin "Log In"
 	GameJoltRefresh "Refresh Trophies"
-	StaticText "The private key is stored in a Windows-protected Base64 file."
 }
 
 // The player menu
